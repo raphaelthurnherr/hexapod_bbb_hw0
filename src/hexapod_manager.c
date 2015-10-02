@@ -38,7 +38,7 @@ unsigned char killAllThread=0;
 int main(void) {
 
 	system("clear");
-	printf("\nHEXAPOD V1.2.0  - 04/05/2015  haha        \n");
+	printf("\nHEXAPOD V1.3    - 04/05/2015           \n");
 	printf("---------------------------------------\n\n");
 
 	printf ("# Demarrage du gestionnaire des taches...\n");
