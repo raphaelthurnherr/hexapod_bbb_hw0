@@ -38,15 +38,15 @@ unsigned char killAllThread=0;
 int main(void) {
 
 	system("clear");
-	printf("\nHEXAPOD V1.2.0  - 04/05/2015 test ghub         \n");
+	printf("\nHEXAPOD V1.2.0  - 04/05/2015          \n");
 	printf("---------------------------------------\n\n");
 
 	printf ("# Demarrage du gestionnaire des taches...\n");
-	// DEMARRAGE DES TÂCHES
+	// DEMARRAGE DES Tï¿½CHES
 	InitMultiTasking();
 
 	usleep(100000);
-	th6_timer30sManagerStart(30000);		// Démarrage Timer 30s
+	th6_timer30sManagerStart(30000);		// Dï¿½marrage Timer 30s
 
 	// ---------------------------------------------------------------------------
 	// MAIN LOOP
@@ -57,10 +57,10 @@ int main(void) {
 			if(!killConsoleTask())  printf( "# ARRET* tache console\n"); // TACHE CONSOLE
 		}
 
-// Contrôle chaques 30seconds
+// Contrï¿½le chaques 30seconds
 		if(th6_timer30sManagerReadyFlag){
 
-			// Contrôle des l'état des batteries, alarme+affichage ON si warning
+			// Contrï¿½le des l'ï¿½tat des batteries, alarme+affichage ON si warning
 			if(BatteryCheck(1)){
 				buzzerCtrl(3);		// Test beep
 			}
